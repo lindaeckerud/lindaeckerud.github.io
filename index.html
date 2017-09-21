@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="finalstyle.css" rel="stylesheet" type="text/css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style>.mySlides {display:none;}</style>
+
+  </head>
+
+
+  <body>
+
+      <!--  Nav Section -->
+
+      <ul>
+      <li><a class="active" href="/Users/lindaeckerud/Desktop/Finals/index.html">Home</a></li>
+      <li><a href="/Users/lindaeckerud/Desktop/Finals/about.html">About</a></li>
+      <li><a href="/Users/lindaeckerud/Desktop/Finals/contact.html">Contact</a></li>
+      <li><a href="/Users/lindaeckerud/Desktop/Finals/gallery.html">Gallery</a></li>
+    </ul>
+
+      <!-- Hero Image -->
+
+        <img src="Logo.png" class="logotype"/>
+      <div class="hero-image">
+
+
+  <!-- About Section -->
+
+        <section class="indextext" id="indextext">
+        <h2 class="hidden">About</h2>
+
+
+    <p class="indextext" style="text-align: center;">A picture says a thousand words.
+      That is an expression that most people has come across at least once in their lives.
+      We belive that to be the bread and butter when it comes to photography. Have you ever felt
+      captured by an image or a film sequece? To us, those are the moments when all those thousand words
+      are brought to life through photograohy. At CLICK, we help you with what you want to achive with your
+      creative talent within the fields of photography and videography. There is no wrong or
+      right way when developing a skill. We are here to encourage you to follow your dreams
+      and reach your crative goals thorough the lense. Click anticipates a friendly, creative and
+      explorative enviroment for our participants to learn how to capture the perfect moment.
+      We offer courses and sessions to fit every skill and level of ambition. Let's <span><strong>Click</strong></span> it and we will get you there.</p>
+    </section>
+
+  <!-- Gallery Index -->
+
+
+ <div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="DSC_0933.jpg" style="width:100%">
+  <img class="mySlides" src="DSC_0921-2.jpg" style="width:100%">
+  <img class="mySlides" src="DSC_0493-2.jpg" style="width:100%">
+</div>
+
+
+
+
+        <!-- Footer Section -->
+
+        <footer>
+      <p>Posted by: Click Contact information: <a href="info@click.com">
+      info@click.com</a>.</p>
+    </footer>
+    <br>
+      <!-- Slide Show Script -->
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000);
+      }
+      </script>
+
+  </body>
+</html>
